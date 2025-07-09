@@ -16,7 +16,7 @@ if match:
     data = json.loads(match.group(1))
 
     hard_puzzle = data['hard']['puzzle_data']['puzzle']
-    sdk_output = f'#SNew York Times\n#B{today.strftime("%d-%m-%Y")}'
+    sdk_output = ""
     for i in range(0, len(hard_puzzle)):
         if i % 9 == 0:
             sdk_output += '\n'
